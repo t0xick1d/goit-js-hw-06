@@ -3,7 +3,7 @@ const actualLenth = Number(inputElement.dataset.length);
 
 inputElement.addEventListener('blur', (e) => {
   const actualInputLenth = inputElement.value.length;
-  if (actualLenth <= actualInputLenth) {
+  if (actualLenth === actualInputLenth) {
     inputElement.classList.add('valid');
     inputElement.classList.remove('invalid');
   } else {
